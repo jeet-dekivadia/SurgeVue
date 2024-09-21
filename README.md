@@ -2,7 +2,7 @@
 
 **Revolutionizing Surgery with Augmented Reality & AI**
 
-![SurgeVue Demo](https://github.com/jeet-dekivadia/SurgeVue/blob/main/logo.png)
+![SurgeVue Demo](https://github.com/jeet-dekivadia/SurgeVue/blob/main/surgevue.png)
 
 ## 📖 Overview
 
