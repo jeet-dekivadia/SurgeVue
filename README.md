@@ -1,16 +1,16 @@
-# SurgikalAI 🧠⚕️
+# SurgeVue 🧠⚕️
 
 **Revolutionizing Surgery with Augmented Reality & AI**
 
-![SurgikalAI Demo]([https://github.com/jeet-dekivadia/SurgikalAI/blob/main/logo.png](https://github.com/jeet-dekivadia/SurgeVue/blob/main/logo.png))
+![SurgeVue Demo]([https://github.com/jeet-dekivadia/SurgeVue/blob/main/logo.png](https://github.com/jeet-dekivadia/SurgeVue/blob/main/logo.png))
 
 ## 📖 Overview
 
-**SurgikalAI** is an augmented reality-powered surgical assistant designed to enhance precision in medical procedures. By overlaying real-time 3D visualizations of patient data and integrating machine learning models for tumor detection, SurgikalAI empowers surgeons with cutting-edge tools for decision-making and surgical planning.
+**SurgeVue** is an augmented reality-powered surgical assistant designed to enhance precision in medical procedures. By overlaying real-time 3D visualizations of patient data and integrating machine learning models for tumor detection, SurgeVue empowers surgeons with cutting-edge tools for decision-making and surgical planning.
 
 ## 🚀 Inspiration
 
-Modern surgeries require accuracy, efficiency, and rapid access to critical data. We were inspired by the potential of augmented reality (AR) and artificial intelligence (AI) to improve these factors and reshape the future of surgery. With SurgikalAI, our vision was to enable surgeons to visualize patient data in real-time, reducing human error and improving patient outcomes.
+Modern surgeries require accuracy, efficiency, and rapid access to critical data. We were inspired by the potential of augmented reality (AR) and artificial intelligence (AI) to improve these factors and reshape the future of surgery. With SurgeVue, our vision was to enable surgeons to visualize patient data in real-time, reducing human error and improving patient outcomes.
 
 ## 🎯 What it does
 
@@ -45,7 +45,7 @@ Modern surgeries require accuracy, efficiency, and rapid access to critical data
 - Balancing accuracy and performance in real-time medical applications requires careful optimization.
 - User experience is crucial in medical tech—AR needs to be intuitive and non-intrusive.
 
-## 🔮 What's next for SurgikalAI
+## 🔮 What's next for SurgeVue
 
 - **Expanded AI Models:** Include additional models for different types of tumors and other medical conditions.
 - **Advanced AR Features:** Enable collaboration between multiple surgeons through shared AR interfaces.
@@ -63,7 +63,7 @@ Check out our demo video [here](https://).
 
 ## 🖥 Try it out
 
-Explore our codebase: [GitHub Repo](https://github.com/jeet-dekivadia/SurgikalAI)
+Explore our codebase: [GitHub Repo](https://github.com/jeet-dekivadia/SurgeVue)
 
 ## 🤝 Contributors
 
