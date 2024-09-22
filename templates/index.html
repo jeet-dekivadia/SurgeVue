@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SurgeVue</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+            background: #fff;
+            color: #333;
+        }
+        .navbar {
+            width: 100%;
+            padding: 20px 0;
+            background: #f8f8f8;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+        }
+        .navbar a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 700;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 40px 0;
+            background: linear-gradient(90deg, #000, #555);
+            -webkit-background-clip: text;
+            color: transparent;
+            text-align: center;
+        }
+        img {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+        .section {
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+        .section:hover {
+            transform: translateY(-10px);
+        }
+        .section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .section p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #666;
+        }
+        .footer {
+            padding: 20px 0;
+            background: #f8f8f8;
+            text-align: center;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .footer a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 700;
+        }
+        .status-icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: gray;
+        margin: 20px auto;
+        animation: flash 1s infinite;
+        
+    }
+
+    .status-icon.yellow {
+        background-color: yellow;
+        animation: flash 1s infinite;
+    }
+    @keyframes flash {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Features</a>
+        <a href="#">Pricing</a>
+        <a href="#">Contact</a>
+    </div>
+    <h1>Welcome to SurgeVue!</h1>
+    <img src="{{ url_for('video_feed') }}" width="640" height="480">
+    
+    
+    <div id="status-icon" class="status-icon"></div>
+    
+    <div class="section tumor-indicator">
+        <h2>Tumor Detection</h2>
+        <p>Status: <strong>Tumor present</strong></p>
+        <p>Confidence: <strong>99.7%</strong></p>
+        <img src="{{ url_for('static', filename='C:/Users/adity/OneDrive/Documents/PennApps/static/brainTumorImg.png') }}" alt="Brain Tumor Image" width="640" height="480">
+
+    </div>  
+    
+    <div class="section product-info">
+        <h2>About SurgeVue</h2>
+        <p>SurgeVue is a multifaceted solution for brain surgeons to reduce risk of errors during brain tumor removal surgery as brain surgeries are the most intensive, critical, and dangerous.
+
+        </p>
+    </div>
+    <div class="footer">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Support</a>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            console.log('DOM fully loaded and parsed');
+        function fetchData() {
+            fetch('/api/data')
+            .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Network response was not ok ' + response.statusText);
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        console.log('Data fetched:', data); // Debugging log
+                        const statusIcon = document.getElementById('status-icon');
+                        if (data.accelerationAlert === true) { // Correct boolean comparison
+                            console.log('Setting status-icon to yellow'); // Debugging log
+                            statusIcon.classList.add('yellow');
+                        } else {
+                            console.log('Removing yellow from status-icon'); // Debugging log
+                            statusIcon.classList.remove('yellow');
+                        }
+                    })
+                .catch(error => console.error('Error fetching data:', error));
+        }
+        setInterval(fetchData, 500); // Fetch data every 5 seconds
+    </script>
+</body> 
+</html>
