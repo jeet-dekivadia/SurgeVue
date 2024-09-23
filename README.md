@@ -119,10 +119,10 @@ Explore our codebase: [GitHub Repo](https://github.com/jeet-dekivadia/SurgeVue)
 ---
 
 ## 🤝 Contributors
-- **Jeet Dekivadia** - Project Lead - [jeet.university@gmail.com](mailto:jeet.university@gmail.com)
-- **Abhijay Salvi** - Object Vision - [salviaj152@gmail.com](mailto:salviaj152@gmail.com)
-- **Ved Borade** - Hardware and UI - [vedmborade@gmail.com](mailto:vedmborade@gmail.com)
-- **Aditya Jain** - Flask and Software - [aditya.jain2702@gmail.com](mailto:aditya.jain2702@gmail.com)
+- **Jeet Dekivadia** - Project Organization Lead - [jeet.university@gmail.com](mailto:jeet.university@gmail.com)
+- **Abhijay Salvi** - Computer Vision Lead- [salviaj152@gmail.com](mailto:salviaj152@gmail.com)
+- **Ved Borade** - Hardware and UI Lead- [vedmborade@gmail.com](mailto:vedmborade@gmail.com)
+- **Aditya Jain** - Flask and Integration Lead - [aditya.jain2702@gmail.com](mailto:aditya.jain2702@gmail.com)
 
 ---
 
